@@ -127,17 +127,20 @@ body {
   margin: 0;
 }
 
-.asset-3d {
+.carousel-3d {
   overflow: hidden;
 }
 
-.item-3d model-viewer {
+.carousel-3d .item {
   margin: 5px;
   overflow: hidden;
   border: 1px solid #bbb;
   border-radius: 10px;
   padding: 0;
   font-size: 0;
+}
+
+.carousel-3d model-viewer {
   width: 300px;
   height: 600px;
 }
