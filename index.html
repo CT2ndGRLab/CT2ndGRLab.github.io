@@ -38,6 +38,9 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
 </head>
 <body>
 
@@ -58,10 +61,12 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
+      <model-viewer src="./static/3D_objects/shoes_gt.glb" 
+                    shadow-intensity="1" 
+                    camera-controls touch-action="pan-y"></model-viewer>
+      <model-viewer src="./static/3D_objects/mannequin_gt.glb" 
+                    shadow-intensity="1" 
+                    camera-controls touch-action="pan-y"></model-viewer>
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
         free-viewpoint
