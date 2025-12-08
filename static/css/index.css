@@ -127,20 +127,6 @@ body {
   margin: 0;
 }
 
-.results-carousel .item-3d {
-  margin: 5px;
-  overflow: hidden;
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  padding: 0;
-  font-size: 0;
-  height: 600px;
-}
-
-.results-carousel model-viewer {
-  margin: 0;
-}
-
 .interpolation-panel {
   background: #f5f5f5;
   border-radius: 10px;
