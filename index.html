@@ -58,7 +58,67 @@
   </div>
 </section>
 
-<section class="hero is-light is-small">
+
+<section class="section">
+  <div class="container">
+
+    <h2 class="title is-3 has-text-centered">3D Mesh Results (20 Items)</h2>
+
+    <!-- 4 x 5 GRID -->
+    <div class="columns is-multiline">
+      
+      <!-- ==== 반복되는 ITEM 구조 (20개 복붙) ==== -->
+      <!-- Item 1 -->
+      <div class="column is-one-quarter">
+        <div class="box" style="padding:10px;">
+
+          <!-- 이미지 5개 -->
+          <div style="display:flex; gap:4px; margin-bottom:10px;">
+            <img src="./static/images/Img_01.png" style="width:20%;">
+            <img src="./static/images/Img_02.png" style="width:20%;">
+            <img src="./static/images/Img_03.png" style="width:20%;">
+            <img src="./static/images/Img_04.png" style="width:20%;">
+            <img src="./static/images/Img_05.png" style="width:20%;">
+          </div>
+
+          <!-- 3D Viewer -->
+          <model-viewer src="./static/3D_objects/object_01.glb"
+                        camera-controls auto-rotate
+                        style="width:100%; height:250px; background:#f0f0f0;">
+          </model-viewer>
+
+        </div>
+      </div>
+      <!-- END ITEM 1 -->
+
+      <!-- ====== ↓↓↓ 여기에 동일한 구조 복붙해서 총 20개 추가하면 됨 ↓↓↓ ====== -->
+
+      <!-- Item 2 -->
+      <div class="column is-one-quarter">
+        <div class="box" style="padding:10px;">
+          <div style="display:flex; gap:4px; margin-bottom:10px;">
+            <img src="./static/images/Img_01.png" style="width:20%;">
+            <img src="./static/images/Img_02.png" style="width:20%;">
+            <img src="./static/images/Img_03.png" style="width:20%;">
+            <img src="./static/images/Img_04.png" style="width:20%;">
+            <img src="./static/images/Img_05.png" style="width:20%;">
+          </div>
+
+          <model-viewer src="./static/3D_objects/object_02.glb"
+                        camera-controls auto-rotate
+                        style="width:100%; height:250px; background:#f0f0f0;">
+          </model-viewer>
+        </div>
+      </div>
+
+      <!-- ... 반복해서 총 20개 만들기 ... -->
+
+    </div>
+
+  </div>
+</section>
+
+<!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="carousel-3d" class="carousel carousel-3d">
@@ -107,7 +167,7 @@
     </h2>
     <h2></h2>
   </div>
-</section>
+</section> -->
 
 
 <section class="hero is-light is-small">
