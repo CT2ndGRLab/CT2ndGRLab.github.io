@@ -31,7 +31,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/MV_images/favicon.svg">
+  <link rel="icon" href="./static/MV_downsampled/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -73,8 +73,20 @@
     }
     .result-card .caption {
       margin-top: 0.4rem;
-      font-size: 0.75rem;
-      color: #777;
+      font-size: 1rem;
+      color: #000000;
+      text-align: center;
+    }
+    .result-card video {
+      width: 100%;
+      height: 240px;
+      background: #f5f5f5;
+      border-radius: 6px;
+    }
+    .result-card .video-caption {
+      margin-top: 0.4rem;
+      font-size: 1.1rem;
+      color: #000000;
       text-align: center;
     }
   </style>
@@ -87,8 +99,64 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">KOCCA-CT 2차년도 시연 페이지</h1>
-          <h3 class="title is-3 publication-title">중앙대학교,</h3>
+          <h3 class="title is-3 publication-title">중앙대학교</h3>
           <h3 class="title is-3 publication-title">3D 메쉬 오브젝트 최적화 및 텍스처 품질 고도화 기술 개발</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="columns is-multiline is-variable is-4">
+    <!-- ==== Item 01 ==== -->
+    <div class="column is-one-quarter">
+      <div class="box result-card">
+        <img src="./static/images/image_01.png" alt="">
+      </div>
+    </div>
+    <!-- ==== Item 02 ==== -->
+    <div class="column is-one-quarter">
+      <div class="box result-card">
+        <img src="./static/images/image_02.png" alt="">
+      </div>
+    </div>
+    <!-- ==== Item 03 ==== -->
+    <div class="column is-one-quarter">
+      <div class="box result-card">
+        <img src="./static/images/image_03.png" alt="">
+      </div>
+    </div>
+    <!-- ==== Item 04 ==== -->
+    <div class="column is-one-quarter">
+      <div class="box result-card">
+        <img src="./static/images/image_04.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section is-light">
+  <div class="container">
+    <div class="columns is-multiline is-variable is-4">
+      <!-- ==== Item 01 ==== -->
+      <div class="column is-half">
+        <div class="box result-card">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/video_01.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="video-caption">데이터 셋 구축 파이프라인 최적화 및 자동화</div>
+        </div>
+      </div>
+      <!-- ==== Item 02 ==== -->
+      <div class="column is-half">
+        <div class="box result-card">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/video_02.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="video-caption">3D 메쉬 오브젝트 최적화 및 품질 고도화</div>
         </div>
       </div>
     </div>
@@ -106,10 +174,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/airplane_01.png" alt="">
-            <img src="./static/MV_images/airplane_02.png" alt="">
-            <img src="./static/MV_images/airplane_03.png" alt="">
-            <img src="./static/MV_images/airplane_04.png" alt="">
+            <img src="./static/MV_downsampled/airplane_01.png" alt="">
+            <img src="./static/MV_downsampled/airplane_02.png" alt="">
+            <img src="./static/MV_downsampled/airplane_03.png" alt="">
+            <img src="./static/MV_downsampled/airplane_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/airplane_gt.glb"
                         camera-controls auto-rotate
@@ -123,10 +191,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/alien_01.png" alt="">
-            <img src="./static/MV_images/alien_02.png" alt="">
-            <img src="./static/MV_images/alien_03.png" alt="">
-            <img src="./static/MV_images/alien_04.png" alt="">
+            <img src="./static/MV_downsampled/alien_01.png" alt="">
+            <img src="./static/MV_downsampled/alien_02.png" alt="">
+            <img src="./static/MV_downsampled/alien_03.png" alt="">
+            <img src="./static/MV_downsampled/alien_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/alien_gt.glb"
                         camera-controls auto-rotate
@@ -140,10 +208,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/ball_01.png" alt="">
-            <img src="./static/MV_images/ball_02.png" alt="">
-            <img src="./static/MV_images/ball_03.png" alt="">
-            <img src="./static/MV_images/ball_04.png" alt="">
+            <img src="./static/MV_downsampled/ball_01.png" alt="">
+            <img src="./static/MV_downsampled/ball_02.png" alt="">
+            <img src="./static/MV_downsampled/ball_03.png" alt="">
+            <img src="./static/MV_downsampled/ball_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/ball_gt.glb"
                         camera-controls auto-rotate
@@ -157,10 +225,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/basketball_01.png" alt="">
-            <img src="./static/MV_images/basketball_02.png" alt="">
-            <img src="./static/MV_images/basketball_03.png" alt="">
-            <img src="./static/MV_images/basketball_04.png" alt="">
+            <img src="./static/MV_downsampled/basketball_01.png" alt="">
+            <img src="./static/MV_downsampled/basketball_02.png" alt="">
+            <img src="./static/MV_downsampled/basketball_03.png" alt="">
+            <img src="./static/MV_downsampled/basketball_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/basketball_gt.glb"
                         camera-controls auto-rotate
@@ -174,10 +242,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/benz_01.png" alt="">
-            <img src="./static/MV_images/benz_02.png" alt="">
-            <img src="./static/MV_images/benz_03.png" alt="">
-            <img src="./static/MV_images/benz_04.png" alt="">
+            <img src="./static/MV_downsampled/benz_01.png" alt="">
+            <img src="./static/MV_downsampled/benz_02.png" alt="">
+            <img src="./static/MV_downsampled/benz_03.png" alt="">
+            <img src="./static/MV_downsampled/benz_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/benz_gt.glb"
                         camera-controls auto-rotate
@@ -191,10 +259,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/bicycle_01.png" alt="">
-            <img src="./static/MV_images/bicycle_02.png" alt="">
-            <img src="./static/MV_images/bicycle_03.png" alt="">
-            <img src="./static/MV_images/bicycle_04.png" alt="">
+            <img src="./static/MV_downsampled/bicycle_01.png" alt="">
+            <img src="./static/MV_downsampled/bicycle_02.png" alt="">
+            <img src="./static/MV_downsampled/bicycle_03.png" alt="">
+            <img src="./static/MV_downsampled/bicycle_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/bicycle_gt.glb"
                         camera-controls auto-rotate
@@ -208,10 +276,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/box_01.png" alt="">
-            <img src="./static/MV_images/box_02.png" alt="">
-            <img src="./static/MV_images/box_03.png" alt="">
-            <img src="./static/MV_images/box_04.png" alt="">
+            <img src="./static/MV_downsampled/box_01.png" alt="">
+            <img src="./static/MV_downsampled/box_02.png" alt="">
+            <img src="./static/MV_downsampled/box_03.png" alt="">
+            <img src="./static/MV_downsampled/box_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/box_gt.glb"
                         camera-controls auto-rotate
@@ -225,10 +293,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/chair_01.png" alt="">
-            <img src="./static/MV_images/chair_02.png" alt="">
-            <img src="./static/MV_images/chair_03.png" alt="">
-            <img src="./static/MV_images/chair_04.png" alt="">
+            <img src="./static/MV_downsampled/chair_01.png" alt="">
+            <img src="./static/MV_downsampled/chair_02.png" alt="">
+            <img src="./static/MV_downsampled/chair_03.png" alt="">
+            <img src="./static/MV_downsampled/chair_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/chair_gt.glb"
                         camera-controls auto-rotate
@@ -242,10 +310,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/cube_01.png" alt="">
-            <img src="./static/MV_images/cube_02.png" alt="">
-            <img src="./static/MV_images/cube_03.png" alt="">
-            <img src="./static/MV_images/cube_04.png" alt="">
+            <img src="./static/MV_downsampled/cube_01.png" alt="">
+            <img src="./static/MV_downsampled/cube_02.png" alt="">
+            <img src="./static/MV_downsampled/cube_03.png" alt="">
+            <img src="./static/MV_downsampled/cube_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/cube_gt.glb"
                         camera-controls auto-rotate
@@ -259,10 +327,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/dice_01.png" alt="">
-            <img src="./static/MV_images/dice_02.png" alt="">
-            <img src="./static/MV_images/dice_03.png" alt="">
-            <img src="./static/MV_images/dice_04.png" alt="">
+            <img src="./static/MV_downsampled/dice_01.png" alt="">
+            <img src="./static/MV_downsampled/dice_02.png" alt="">
+            <img src="./static/MV_downsampled/dice_03.png" alt="">
+            <img src="./static/MV_downsampled/dice_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/dice_gt.glb"
                         camera-controls auto-rotate
@@ -276,10 +344,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/donut_01.png" alt="">
-            <img src="./static/MV_images/donut_02.png" alt="">
-            <img src="./static/MV_images/donut_03.png" alt="">
-            <img src="./static/MV_images/donut_04.png" alt="">
+            <img src="./static/MV_downsampled/donut_01.png" alt="">
+            <img src="./static/MV_downsampled/donut_02.png" alt="">
+            <img src="./static/MV_downsampled/donut_03.png" alt="">
+            <img src="./static/MV_downsampled/donut_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/donut_gt.glb"
                         camera-controls auto-rotate
@@ -293,10 +361,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/grenade_01.png" alt="">
-            <img src="./static/MV_images/grenade_02.png" alt="">
-            <img src="./static/MV_images/grenade_03.png" alt="">
-            <img src="./static/MV_images/grenade_04.png" alt="">
+            <img src="./static/MV_downsampled/grenade_01.png" alt="">
+            <img src="./static/MV_downsampled/grenade_02.png" alt="">
+            <img src="./static/MV_downsampled/grenade_03.png" alt="">
+            <img src="./static/MV_downsampled/grenade_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/grenade_gt.glb"
                         camera-controls auto-rotate
@@ -310,10 +378,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/keyboard_piano_01.png" alt="">
-            <img src="./static/MV_images/keyboard_piano_02.png" alt="">
-            <img src="./static/MV_images/keyboard_piano_03.png" alt="">
-            <img src="./static/MV_images/keyboard_piano_04.png" alt="">
+            <img src="./static/MV_downsampled/keyboard_piano_01.png" alt="">
+            <img src="./static/MV_downsampled/keyboard_piano_02.png" alt="">
+            <img src="./static/MV_downsampled/keyboard_piano_03.png" alt="">
+            <img src="./static/MV_downsampled/keyboard_piano_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/keyboard_piano_gt.glb"
                         camera-controls auto-rotate
@@ -327,10 +395,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/lamp_01.png" alt="">
-            <img src="./static/MV_images/lamp_02.png" alt="">
-            <img src="./static/MV_images/lamp_03.png" alt="">
-            <img src="./static/MV_images/lamp_04.png" alt="">
+            <img src="./static/MV_downsampled/lamp_01.png" alt="">
+            <img src="./static/MV_downsampled/lamp_02.png" alt="">
+            <img src="./static/MV_downsampled/lamp_03.png" alt="">
+            <img src="./static/MV_downsampled/lamp_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/lamp_gt.glb"
                         camera-controls auto-rotate
@@ -344,10 +412,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/lipstick_01.png" alt="">
-            <img src="./static/MV_images/lipstick_02.png" alt="">
-            <img src="./static/MV_images/lipstick_03.png" alt="">
-            <img src="./static/MV_images/lipstick_04.png" alt="">
+            <img src="./static/MV_downsampled/lipstick_01.png" alt="">
+            <img src="./static/MV_downsampled/lipstick_02.png" alt="">
+            <img src="./static/MV_downsampled/lipstick_03.png" alt="">
+            <img src="./static/MV_downsampled/lipstick_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/lipstick_gt.glb"
                         camera-controls auto-rotate
@@ -361,10 +429,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/mannequin_01.png" alt="">
-            <img src="./static/MV_images/mannequin_02.png" alt="">
-            <img src="./static/MV_images/mannequin_03.png" alt="">
-            <img src="./static/MV_images/mannequin_04.png" alt="">
+            <img src="./static/MV_downsampled/mannequin_01.png" alt="">
+            <img src="./static/MV_downsampled/mannequin_02.png" alt="">
+            <img src="./static/MV_downsampled/mannequin_03.png" alt="">
+            <img src="./static/MV_downsampled/mannequin_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/mannequin_gt.glb"
                         camera-controls auto-rotate
@@ -378,10 +446,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/monitor_01.png" alt="">
-            <img src="./static/MV_images/monitor_02.png" alt="">
-            <img src="./static/MV_images/monitor_03.png" alt="">
-            <img src="./static/MV_images/monitor_04.png" alt="">
+            <img src="./static/MV_downsampled/monitor_01.png" alt="">
+            <img src="./static/MV_downsampled/monitor_02.png" alt="">
+            <img src="./static/MV_downsampled/monitor_03.png" alt="">
+            <img src="./static/MV_downsampled/monitor_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/monitor_gt.glb"
                         camera-controls auto-rotate
@@ -395,10 +463,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/mugcup_01.png" alt="">
-            <img src="./static/MV_images/mugcup_02.png" alt="">
-            <img src="./static/MV_images/mugcup_03.png" alt="">
-            <img src="./static/MV_images/mugcup_04.png" alt="">
+            <img src="./static/MV_downsampled/mugcup_01.png" alt="">
+            <img src="./static/MV_downsampled/mugcup_02.png" alt="">
+            <img src="./static/MV_downsampled/mugcup_03.png" alt="">
+            <img src="./static/MV_downsampled/mugcup_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/mugcup_gt.glb"
                         camera-controls auto-rotate
@@ -412,10 +480,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/shoes_01.png" alt="">
-            <img src="./static/MV_images/shoes_02.png" alt="">
-            <img src="./static/MV_images/shoes_03.png" alt="">
-            <img src="./static/MV_images/shoes_04.png" alt="">
+            <img src="./static/MV_downsampled/shoes_01.png" alt="">
+            <img src="./static/MV_downsampled/shoes_02.png" alt="">
+            <img src="./static/MV_downsampled/shoes_03.png" alt="">
+            <img src="./static/MV_downsampled/shoes_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/shoes_gt.glb"
                         camera-controls auto-rotate
@@ -429,10 +497,10 @@
       <div class="column is-one-quarter">
         <div class="box result-card">
           <div class="thumb-row">
-            <img src="./static/MV_images/sofa_01.png" alt="">
-            <img src="./static/MV_images/sofa_02.png" alt="">
-            <img src="./static/MV_images/sofa_03.png" alt="">
-            <img src="./static/MV_images/sofa_04.png" alt="">
+            <img src="./static/MV_downsampled/sofa_01.png" alt="">
+            <img src="./static/MV_downsampled/sofa_02.png" alt="">
+            <img src="./static/MV_downsampled/sofa_03.png" alt="">
+            <img src="./static/MV_downsampled/sofa_04.png" alt="">
           </div>
           <model-viewer src="./static/3D_objects/sofa_gt.glb"
                         camera-controls auto-rotate
